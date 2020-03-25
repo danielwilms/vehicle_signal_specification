@@ -7,7 +7,7 @@ provisions of the license provided by the LICENSE file in this repository.
 This document describes the process for creating a new version of the
 signal specification.
 
-The process, driven by GENIVI, is aimed at being lightweight and carried
+The process, driven by GENIVI with significant input from the W3C Automotive WG, is aimed at being lightweight and carried
 out in public, giving both GENIVI members and non-members a say in the
 creation of a new version.
 
