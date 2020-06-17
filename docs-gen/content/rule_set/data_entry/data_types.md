@@ -52,7 +52,7 @@ dedicated data type. Instead, they are described through the
 meta data about the sensor itself and how to retrieve the
 corresponding data stream.
 
-A camera can be a good example to it. The Data Entry for the camera
+A camera can be a good example of it. The Data Entry for the camera
 and the corresponding video stream could look like:
 
 ```YAML
@@ -69,6 +69,11 @@ and the corresponding video stream could look like:
   type: sensor
   datatype: string
   description: URI for retrieving the video stream
+
+- Camera.Protocol:
+  type: attribute
+  datatype: string
+  description: Protocol used for the video stream, connection done via Camera.URI
 ```
 
 In this example, it shows the usage of meta data about
