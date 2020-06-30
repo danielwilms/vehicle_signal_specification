@@ -68,17 +68,12 @@ and the corresponding video stream could look like:
 - Camera.URI:
   type: sensor
   datatype: string
-  description: URI for retrieving the video stream
+  description: URI for retrieving the video stream, with information on how to access the stream (e.g. protocol)
 
-- Camera.Protocol:
-  type: attribute
-  datatype: string
-  description: Protocol used for the video stream, connection done via Camera.URI
 ```
 
 In this example, it shows the usage of meta data about
 the status of the sensor. The camera can be set to active through
 the same data entry (`actuator`). A dynamic data entry (`sensor`)
-is used for the URI of the video stream. As long as the camera
-`IsActive`, in this example the `URI` is set and empty otherwise.
-Datatypes are not specified for ```branch```
+is used for the URI of the video stream. Information on how to access
+the stream is expected.
