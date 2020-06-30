@@ -29,13 +29,13 @@ ByteBuffer | buffer of bytes (aka BLOB) | n/a | n/a
 
 Besides the datatypes described above, VSS supports as well the concept of
 `arrays`, as a *collection of elements based on the data entry
-definition*, wherein it's specified. Both - limited and
-unlimited - types of arrays are supported. The following syntax shall be used to declare an array:
+definition*, wherein it's specified. Arrays with a fixed number of elements
+or variable in size are supported. The following syntax shall be used to declare an array:
 
 ```YAML
-# unlimited number of elements in an array
+# undefined number of elements in an array
 datatype: UInt32[]
-# limited number of elements in an array
+# fixed number of elements in an array
 datatype: UInt32[100]
 ```
 
