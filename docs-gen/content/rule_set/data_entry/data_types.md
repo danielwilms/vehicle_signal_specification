@@ -68,7 +68,7 @@ and the corresponding video stream could look like:
 - Camera.URI:
   type: sensor
   datatype: string
-  description: URI for retrieving the video stream, with information on how to access the stream (e.g. protocol)
+  description: URI for retrieving the video stream, with information on how to access the stream (e.g. protocol,  data format, encoding, etc.)
 
 ```
 
