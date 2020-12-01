@@ -71,3 +71,24 @@ be included as well, as shown below:
 The branches do not have to be defined in any specific order as long
 as each branch component is defined somewhere in the vspec file (or an
 included vspec file).
+
+## DEPRECATION
+
+During the process of model development, nodes might be
+moved or deleted. Giving developers a chance to adopt to the
+changes, the original nodes are marked as deprecated with the following rules.
+
+* Nodes, which are moved in the tree or removed from the specification are marked with the deprecation keyword.
+* The string following the deprecation keyword shall start with the version, when the node was deprecated starting with `@` (e.g. `@2.1`) followed by the reason for deprecation.
+* If the node was moved, it shall be indicated by `moved to` followed by the new node name in dot notation as deprecation reason.
+* If the node is removed from the specification it shall be indicated by `removed` and optionally the reason for the removal as deprecation reason.
+* Nodes which are deprecated will be removed from the specification, either in the second minor update or, if earlier, the next major update.
+
+### Example
+```
+Navigation.CurrentLocation:
+  type: branch
+  aggregate: true
+  description: The current latitude and longitude of the vehicle.
+  deprecation: @2.1 moved to Vehicle.CurrentLocation
+```  
